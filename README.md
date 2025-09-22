@@ -1,2 +1,1 @@
-# relikt-psb.github.io
-CV
+Резюме: https://relikt-psb.github.io/
