@@ -1,1 +1,1 @@
-Резюме: https://relikt-psb.github.io/
+Резюме: https://relikt-psb.github.io
