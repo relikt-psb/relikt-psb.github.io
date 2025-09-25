@@ -1,45 +1,200 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Проекты</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap&subset=cyrillic" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Проекты</title>
+  <link rel="icon" href="favicon.png">
+  <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap&subset=cyrillic"
+      rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <header class="site-header">
-    <nav class="nav">
-        <a class="nav__link" href="index.html">Обо мне</a>
-        <a class="nav__link" href="projects.html">Проекты</a>
-    </nav>
+  <nav class="nav">
+    <a class="nav__link" href="index.html">Обо мне</a>
+    <a class="nav__link" href="projects.html">Проекты</a>
+  </nav>
 </header>
 
 <main class="container">
-    <h1>(Страница не готова) Проекты</h1>
 
+  <section class="cv-projects">
 
-    <ol class="projects">
-        <li class="project">
-            <span class="project__hash" aria-hidden="true">#</span>
-            <div class="project__body">
-                <h2 class="project__title">Система авто‑полива</h2>
-                <p class="project__desc">
-                    Экспериментальная система обработки текстов: автоматизация, аналитика, KiCad, C, сборка пайплайна.
-                </p>
-            </div>
-        </li>
+    <!-- Таймер -->
+    <div class="cv-project">
+      <h2>Программируемый таймер</h2>
+      <div class="cv-project__content">
+        <div class="cv-project__pictures">
+          <a class="img-link" href="img/timer/result.jpg" target="_blank" rel="noopener">
+            <img src="img/timer/result.jpg" alt="" title="Результат" class="cv-project__img">
+          </a>
+<!--          <div class="gallery">-->
+<!--            <a href="img/watering_prototype/blue-scheme.png" class="img-link" target="_blank" rel="noopener">-->
+<!--              <img src="img/watering_prototype/blue-scheme.png" title="todo: Литография" alt="">-->
+<!--            </a>-->
+<!--            <a href="img/watering_prototype/result_open.jpeg" class="img-link" target="_blank" rel="noopener">-->
+<!--              <img src="img/watering_prototype/result_open.jpeg" title="Результат" alt="">-->
+<!--            </a>-->
+<!--            <a-->
+<!--                href="img/watering_prototype" class="img-link"><img src="img/watering_prototype" alt=""></a>-->
+<!--            <a-->
+<!--                href="img/watering_prototype" class="img-link"><img src="img/watering_prototype" alt=""></a>-->
+<!--          </div>-->
+        </div>
+        <div class="cv-project__text">
+          <p>
+            Компактный таймер на ATtiny13 с семисегментной индикацией через каскад 74HC595, управлением кнопками Start/Stop и звуковой сигнализацией. Питается от 5 В, включает транзисторный ключ для нагрузки и контрольные светодиоды, ориентирован на простое повторение и стабильную работу.
+          </p>
+          <h4>Было сделано:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>Проектирование и разводка платы</li>
+            <li>Фотолитография + травление, в домашних условиях</li>
+            <li>Изготовление, пайка (включая SMD)</li>
+            <li>Разработка ПО</li>
+          </ul>
+          <h4>Особенности проекта:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <li class="project">
-            <span class="project__hash" aria-hidden="true">#</span>
-            <div class="project__body">
-                <h2 class="project__title">Реализация схемы на микроконтроллере</h2>
-                <p class="project__desc">
-                    Проект с фокусом на минимализм: аккуратная схемотехника, стабильное питание, фильтрация, прошивка.
-                </p>
-            </div>
-        </li>
-    </ol>
+    <!-- Автополив, прототип -->
+    <div class="cv-project">
+      <h2>Система автополива, прототип</h2>
+      <div class="cv-project__content">
+        <div class="cv-project__pictures">
+          <a class="img-link" href="img/watering_prototype/scheme.png" target="_blank" rel="noopener">
+            <img src="img/watering_prototype/scheme.png" alt="" title="Печатная плата" class="cv-project__img">
+          </a>
+          <div class="gallery">
+            <a href="img/watering_prototype/blue-scheme.png" class="img-link" target="_blank" rel="noopener">
+              <img src="img/watering_prototype/blue-scheme.png" title="todo: Литография" alt="">
+            </a>
+            <a href="img/watering_prototype/result_open.jpeg" class="img-link" target="_blank" rel="noopener">
+              <img src="img/watering_prototype/result_open.jpeg" title="Результат" alt="">
+            </a>
+            <a
+                href="img/watering_prototype" class="img-link"><img src="img/watering_prototype" alt=""></a>
+            <a
+                href="img/watering_prototype" class="img-link"><img src="img/watering_prototype" alt=""></a>
+          </div>
+        </div>
+        <div class="cv-project__text">
+          <p>
+            Компактный контроллер полива/реле на ESP8266 с питанием 12 В и расширением I/O через цепочки 74HC595; поддерживает расписания по RTC DS1307 и ручной/авто-режим. Плата двухслойная, ~100 x 70 мм, рассчитана на помехоустойчивую коммутацию и удобное подключение через клеммники.
+          </p>
+          <h4>Было сделано:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>Проектирование и разводка платы</li>
+            <li>Фотолитография + травление, в домашних условиях</li>
+            <li>Изготовление, пайка (включая SMD)</li>
+            <li>Разработка ПО</li>
+          </ul>
+          <h4>Особенности проекта:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>Реализация универсального многоканального таймера</li>
+            <li>Wi-Fi модуль</li>
+            <li>Размер: 100.00мм x 70.00мм</li>
+            <li>Слои меди: 2</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Автополив -->
+    <div class="cv-project">
+      <h2>Система автополива</h2>
+      <div class="cv-project__content">
+        <div class="cv-project__pictures">
+          <a class="img-link" href="img/watering/result_3d.png" target="_blank" rel="noopener">
+            <img src="img/watering/result_3d.png" alt="" title="Печатная плата с компонентами" class="cv-project__img">
+          </a>
+          <div class="gallery">
+            <a href="img/watering/scheme_red.png" class="img-link" target="_blank" rel="noopener">
+              <img src="img/watering/scheme_red.png" title="todo: Верхний слой печатной платы" alt="">
+            </a>
+            <a href="img/watering/scheme_blue.png" class="img-link" target="_blank" rel="noopener">
+              <img src="img/watering/scheme_blue.png" title="todo: Нижний слой печатной платы" alt="">
+            </a>
+            <a href="img/watering/gui_wi-fi.png" class="img-link" target="_blank" rel="noopener">
+              <img src="img/watering/gui_wi-fi.png" title="Графический интерфейс: настройка сети" alt="">
+            </a>
+            <a href="img/watering/gui_main.png" class="img-link" target="_blank" rel="noopener">
+              <img src="img/watering/gui_main.png" title="Графический интерфейс: часы полива" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="cv-project__text">
+          <p>
+            Компактный контроллер полива/реле на ESP8266 с питанием 12 В и расширением I/O через цепочки 74HC595; управляет множеством каналов исполнительных устройств, поддерживает расписания по RTC DS1307 и ручной/авто-режим. Плата двухслойная ~106 x 117 мм, рассчитана на помехоустойчивую коммутацию и удобное подключение через клеммники.
+          </p>
+          <h4>Было сделано:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>Проектирование и разводка платы</li>
+            <li>Фотолитография + травление, в домашних условиях</li>
+            <li>Изготовление, пайка (включая SMD)</li>
+            <li>Разработка ПО</li>
+          </ul>
+          <h4>Особенности проекта:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>Солнечный контроллер заряда</li>
+            <li>Реализация универсального многоканального таймера</li>
+            <li>Wi-Fi модуль</li>
+            <li>Размер: 106.68мм x 116.84мм</li>
+            <li>Слои меди: 2 слоя</li>
+            <li>Компоненты: 173 шт. (SMD-доминирующая сборка)</li>
+            <li>Площадки: SMD — 543, сквозные — 181</li>
+            <li>Переходные отверстия: 113</li>
+            <li>Нетов: 146</li>
+            <li>Монтажные/механические отверстия: 12</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Часы -->
+    <div class="cv-project">
+      <h2>Часы</h2>
+      <div class="cv-project__content">
+        <div class="cv-project__pictures">
+          <a class="img-link" href="img/watch/result.png" target="_blank" rel="noopener">
+            <img src="img/watch/result.png" alt="" title="Результат" class="cv-project__img">
+          </a>
+          <div class="gallery">
+<!--            <a href="img/watering_prototype/blue-scheme.png" class="img-link" target="_blank" rel="noopener">-->
+<!--              <img src="img/watering_prototype/blue-scheme.png" title="todo: Литография" alt="">-->
+<!--            </a>-->
+<!--            <a href="img/watering_prototype/result_open.jpeg" class="img-link" target="_blank" rel="noopener">-->
+<!--              <img src="img/watering_prototype/result_open.jpeg" title="Результат" alt="">-->
+<!--            </a>-->
+          </div>
+        </div>
+        <div class="cv-project__text">
+          <p>
+            ...
+          </p>
+          <h4>Было сделано:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>Проектирование и разводка платы</li>
+            <li>Фотолитография + травление, в домашних условиях</li>
+            <li>Изготовление, пайка (включая SMD)</li>
+            <li>Разработка ПО</li>
+          </ul>
+          <h4>Особенности проекта:</h4>
+          <ul class="cv-project__list cv-project__works">
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 </main>
 
 </body>

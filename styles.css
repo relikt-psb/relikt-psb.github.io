@@ -87,14 +87,53 @@ body {
 .exp__location { }
 .exp__desc { margin: 8px 0 0; }
 
-.projects { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; }
-.project { display: grid; grid-template-columns: 32px 1fr; gap: 16px; align-items: start; padding: 16px; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: var(--shadow); }
-.project__hash { color: var(--accent); font-weight: 600; font-size: 24px; line-height: 1; padding-top: 3px; }
-.project__title { margin: 0 0 6px; }
-.project__desc { margin: 0; color: var(--text); }
+.cv-project {
+  font-size: 16px;
+  margin-bottom: 64px;
+}
+.cv-project p { margin-top: 0; margin-bottom: 2px; }
+.cv-project h4 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.cv-project h4::before {
+  content: "# ";
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.gallery {
+  clear: both;
+}
+.gallery img {
+  height: 100px;
+  max-width: 150px;
+}
+
+
+.cv-project__content {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 24px;
+}
+.cv-project__img {
+  width: 100%;
+  padding-bottom: 8px;
+  float: left;
+}
+.cv-project__list {
+  font-size: 14px;
+  padding-left: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.img-link {
+  text-decoration: none;
+}
 
 a { color: inherit; }
-a:hover { color: #fff; }
 
 h2 {
   color: var(--text);
@@ -108,5 +147,9 @@ h2 {
   .intro { grid-template-columns: 1fr; }
   .intro__avatar {
     text-align: center;
+  }
+
+  .cv-project__content {
+    grid-template-columns: 1fr;
   }
 }

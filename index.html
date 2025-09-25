@@ -1,76 +1,85 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Обо мне</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap&subset=cyrillic" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Обо мне</title>
+  <link rel="icon" href="favicon.png">
+  <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap&subset=cyrillic"
+      rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <header class="site-header">
-    <nav class="nav">
-        <a class="nav__link" href="index.html">Обо мне</a>
-        <a class="nav__link" href="projects.html">Проекты</a>
-    </nav>
+  <nav class="nav">
+    <a class="nav__link" href="index.html">Обо мне</a>
+    <a class="nav__link" href="projects.html">Проекты</a>
+  </nav>
 </header>
 
 <main class="container">
-    <section class="intro">
-        <div>
-            <div class="intro__avatar" aria-hidden="true">
-                <img src="img/person.png">
-            </div>
-            <div style="margin-top: 8px; font-size: 16px; display: flex; align-items: center"><img src="img/email.svg" alt="e-mail" style="width: 17px; height: 17px; margin-right: 10px;">bar.andrey71@gmail.com</div>
-        </div>
-        <div class="intro__text">
-            <p style="margin-top: 0;">
-                Меня зовут Андрей Барышевский. Со школьных лет интересуюсь электроникой,
-                ходил в радио кружок при станции юных техников.
-                В дальнейшем это увлечение переросло в профессиональную деятельность.
-                Много лет ремонтировал самую разную технику и создавал устройства с нуля:
-                от идеи и схем до разводки и изготовлении плат, сборки и отладки.
-                Имею практический опыт в схемотехнике и остаюсь приверженцем инженерного подхода: аккуратности, проверяемости решений, технического минимализма и надёжности.
-            </p>
-            <p class="sequence" style="padding-bottom: 0px;">
-                <span class="sequence-sign"></span> <strong>ИНТЕРЕСЫ:</strong> радиотехника,
-                ремонт (ПК, LCD мониторы, офисная техника - принтеры, МФУ и др.),
-                embedding-разработка,
-                сетевое администрирование,
-                хобби - ракетомоделизм
-            </p>
-            <p class="sequence">
-                <span class="sequence-sign"></span> <strong>ОБРАЗОВАНИЕ:</strong>
-                <strong>высшее образование</strong> "Инженер-конструктор электронно-вычислительных систем"
-                (Харьковский государственный университет радиоэлектроники им. ак. Янгеля),
-                <strong>средне-специальное</strong> "Техник технолог обработки металлов резанием на станках ЧПУ, промышленных роботов и автоматизированных линий"
-                (электромеханический техникум)
-            </p>
-            <p class="sequence">
-                <span class="sequence-sign"></span> <strong>ТЕХНИЧЕСКИЙ СТЕК:</strong> EasyEDA, DipTrace, Компас-3D, Sprint-Layout, sPlan, C язык прогр.
-            </p>
-        </div>
-    </section>
+  <section class="intro">
+    <div>
+      <div class="intro__avatar" aria-hidden="true">
+        <img src="img/person.png" alt="Фото">
+      </div>
+      <div style="margin-top: 8px; font-size: 16px; display: flex; align-items: center"><img src="img/email.svg"
+                                                                                             alt="e-mail"
+                                                                                             style="width: 17px; height: 17px; margin-right: 10px;">bar.andrey71@gmail.com
+      </div>
+    </div>
+    <div class="intro__text">
+      <p style="margin-top: 0;">
+        Меня зовут Андрей Барышевский. Со школьных лет интересуюсь электроникой,
+        ходил в радио кружок при станции юных техников.
+        В дальнейшем это увлечение переросло в профессиональную деятельность.
+        Много лет ремонтировал самую разную технику и создавал устройства с нуля:
+        от идеи и схем до разводки и изготовлении плат, сборки и отладки.
+        Имею практический опыт в схемотехнике и остаюсь приверженцем инженерного подхода: аккуратности, проверяемости
+        решений, технического минимализма и надёжности.
+      </p>
+      <p class="sequence" style="padding-bottom: 0px;">
+        <span class="sequence-sign"></span> <strong>ИНТЕРЕСЫ:</strong> радиотехника,
+        ремонт (ПК, телефоны, LCD мониторы, офисная техника - принтеры, МФУ и др.),
+        embedding-разработка,
+        сетевое администрирование,
+        хобби - ракетомоделизм
+      </p>
+      <p class="sequence">
+        <span class="sequence-sign"></span> <strong>ОБРАЗОВАНИЕ:</strong>
+        <br><strong>высшее образование</strong> "Инженер-конструктор электронно-вычислительных систем"
+        (Харьковский государственный университет радиоэлектроники им. ак. Янгеля),
+        <br><strong>средне-специальное</strong> "Техник технолог обработки металлов резанием на станках ЧПУ, промышленных
+        роботов и автоматизированных линий"
+        (Кизлярский электромеханический техникум)
+      </p>
+      <p class="sequence">
+        <span class="sequence-sign"></span> <strong>ТЕХНИЧЕСКИЙ СТЕК:</strong> EasyEDA, DipTrace, Компас-3D,
+        Sprint-Layout, sPlan, C язык прогр.
+      </p>
+    </div>
+  </section>
 
-    <section class="experience">
-        <h2>Опыт работы</h2>
-        <div class="exp">
-            <div class="exp__item">
-                <div class="exp__role">Инженер-схемотехник</div>
-                <div class="exp__meta">Ellco · Кизляр, Россия</div>
-                <div class="exp__meta">2021 — н.в.</div>
-                <p class="exp__desc">Разработка и отладка печатных плат, взаимодействие с производством, тестирование.
-                </p>
-            </div>
-            <div class="exp__item">
-                <div class="exp__role">Embedded инженер</div>
-                <div class="exp__meta">Alfa · Кизляр, Россия</div>
-                <div class="exp__meta">2019 — 2021</div>
-                <p class="exp__desc">Прошивки на C/C++, отладка, интеграция с периферией, обеспечение надежности.
-                </p>
-            </div>
-        </div>
-    </section>
+  <section class="experience">
+    <h2>Опыт работы</h2>
+    <div class="exp">
+      <div class="exp__item">
+        <div class="exp__role">Инженер-схемотехник</div>
+        <div class="exp__meta">Ellco · Кизляр, Россия</div>
+        <div class="exp__meta">2021 — н.в.</div>
+        <p class="exp__desc">Разработка и отладка печатных плат, взаимодействие с производством, тестирование.
+        </p>
+      </div>
+      <div class="exp__item">
+        <div class="exp__role">Embedded инженер</div>
+        <div class="exp__meta">Alfa · Кизляр, Россия</div>
+        <div class="exp__meta">2019 — 2021</div>
+        <p class="exp__desc">Прошивки на C/C++, отладка, интеграция с периферией, обеспечение надежности.
+        </p>
+      </div>
+    </div>
+  </section>
 </main>
 
 </body>
