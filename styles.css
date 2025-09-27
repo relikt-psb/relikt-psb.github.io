@@ -80,12 +80,18 @@ body {
 }
 
 .experience { padding-top: 52px; }
-.exp { display: grid; gap: 16px; }
+.exp { display: grid; gap: 4px; }
 .exp__item { padding: 16px; }
 .exp__role { font-weight: 600; font-size: 18px; text-transform: uppercase; }
 .exp__meta { color: var(--muted); font-size: 14px; }
-.exp__location { }
-.exp__desc { margin: 8px 0 0; }
+.exp__desc { margin: 8px 0 0; font-size: 14px; }
+.exp__list {
+  font-size: 14px;
+  padding-left: 18px;
+  padding-top: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .cv-project {
   font-size: 16px;
