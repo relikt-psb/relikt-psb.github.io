@@ -65,6 +65,7 @@ body {
 }
 .intro__avatar img {
   box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  width: 290px;
 }
 .intro__title { margin: 0 0 8px; line-height: 1.2; }
 
